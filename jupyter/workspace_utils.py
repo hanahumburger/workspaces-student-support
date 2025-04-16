@@ -52,3 +52,8 @@ def keep_awake(iterable, delay=DELAY, interval=INTERVAL):
         # do iteration with lots of work here
     """
     with active_session(delay, interval): yield from iterable
+     import workspace_utils.py
+from workspace_utils import active_session
+ 
+with active_session():
+    # do long-running work here
